@@ -39,7 +39,7 @@ public class Animal {
 	@Override
 	public String toString() {
 		if (zona.size() == 0) {
-			String str = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + "y mi genero es " + genero;
+			String str = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero;
 			return str;
 		} else {
 			String str = "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + "y mi genero es " + genero + 
