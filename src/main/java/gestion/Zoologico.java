@@ -18,7 +18,7 @@ public class Zoologico {
 		zonas[zonas.length] = zona;
 	}
 	
-	public int CantidadTotalAnimales() {
+	public int cantidadTotalAnimales() {
 		int cantAnim = 0;
 		for (Zona i: zonas) {
 			cantAnim += i.cantidadAnimales();
@@ -42,5 +42,8 @@ public class Zoologico {
 		return ubicacion;
 	}
 	
+	public Zona[] getZona() {
+		return zonas;
+	}
 	
 }
