@@ -1,13 +1,15 @@
 package gestion;
+import java.util.*;
 
 public class Zoologico {
 	private String nombre;
 	private String ubicacion;
-	private Zona[] zonas;
+	private List<Zona> zonas = new ArrayList<Zona>();
 	
 	public Zoologico(String nombre, String ubicacion) {
 		this.nombre = nombre;
 		this.ubicacion = ubicacion;
+		
 	}
 	
 	public Zoologico() {
@@ -15,7 +17,7 @@ public class Zoologico {
 	}
 	
 	public void agregarZonas(Zona zona) {
-		zonas[zonas.length] = zona;
+		zonas.add(zona);
 	}
 	
 	public int cantidadTotalAnimales() {
@@ -42,7 +44,7 @@ public class Zoologico {
 		return ubicacion;
 	}
 	
-	public Zona[] getZona() {
+	public List<Zona> getZona() {
 		return zonas;
 	}
 	
