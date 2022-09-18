@@ -17,12 +17,12 @@ public class Ave extends Animal {
 	}
 	
 	public Ave() {
-
+		listado.add(this);
 	}
 	
 	
 	public static int cantidadAves() {
-		return halcones+aguilas;
+		return listado.size();
 	}
 	
 	public String movimiento() {
